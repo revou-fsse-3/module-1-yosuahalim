@@ -8,10 +8,11 @@ main {
 
 footer {
   display: flex;
-  padding-left: 10px;
   flex-direction: column;
-  height: 100px;
+  padding-left: 10px;
+  height: auto;
   background-color: #faf8ed;
+  margin-top: auto;
 }
 
 .heroes {
@@ -22,6 +23,12 @@ footer {
 
 .myForm {
   display: flex;
+  align-items: center;
+}
+
+.inputForm {
+  margin-right: 5px;
+  height: 20px;
 }
 
 .navigation {
@@ -61,4 +68,27 @@ li {
   border: 1px solid black;
   padding: 10px;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 760px) {
+  main {
+    padding: 0px;
+  }
+
+  .myForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputForm {
+    margin-bottom: 5px;
+    height: 20px;
+  }
+
+  header {
+    display: none !important;
+  }
+  .heroes {
+    grid-template-columns: 1fr;
+  }
 }

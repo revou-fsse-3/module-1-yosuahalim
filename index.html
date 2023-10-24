@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <nav class="navigation">
+    <header class="navigation">
       <img src="/assets/my-dog.jpeg" width="50" height="50" alt="" />
 
       <p>Yosua Store</p>
@@ -24,19 +24,21 @@
         <input type="text" placeholder="Search" />
         <button onclick="handleClick()">Search</button>
 
-        <ul>
-          <li>
-            <a href="#heroes">Home</a>
-          </li>
-          <li>
-            <a href="#">Pets</a>
-          </li>
-          <li>
-            <a href="#">About Us</a>
-          </li>
-        </ul>
+        <nav>
+          <ul>
+            <li>
+              <a href="#heroes">Home</a>
+            </li>
+            <li>
+              <a href="#">Pets</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </nav>
+    </header>
 
     <main>
       <h1>Yosua Pet Store</h1>
@@ -64,20 +66,46 @@
         </div>
       </div>
 
-      <div class="border-1">My text</div>
-      <div class="border-1">My text</div>
+      <section class="border-1">My text</section>
+      <section class="border-1">My text</section>
+      <section class="border-1">My text</section>
+      <section class="border-1">My text</section>
     </main>
-  </body>
 
-  <footer>
-    <h3>Contact Me</h3>
-    <div class="myForm">
-      <form action="">
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Name" />
-        <input type="text" placeholder="Message" />
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
-  </footer>
+    <footer>
+      <h3>Contact Me</h3>
+      <div>
+        <form class="myForm" action="/">
+          <input class="inputForm" type="text" placeholder="Email" />
+          <input
+            class="inputForm"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+          />
+          <textarea class="inputForm" placeholder="Message"> </textarea>
+          <select name="gender" id="gender">
+            <option value="L">Male</option>
+            <option value="F">Female</option>
+          </select>
+
+          <!-- <input type="radio" name="js" value="js" />
+          <label for="js">JS</label>
+          <input type="radio" name="js" value="js" />
+          <label for="js">CSS</label>
+          <input type="radio" name="js" value="js" />
+          <label for="js">HTML</label> -->
+
+          <div style="display: flex">
+            <input type="checkbox" />
+            <p>Agree Terms and Conditions</p>
+          </div>
+          <button onclick="handleSubmit(event)" style="margin-left: 10px">
+            Submit
+          </button>
+        </form>
+      </div>
+    </footer>
+  </body>
 </html>
