@@ -16,7 +16,11 @@
 
   <body>
     <header class="navigation">
-      <img src="/assets/my-dog.jpeg" width="50" height="50" alt="" />
+      <picture>
+        <source media="(min-width: 1500px)" srcset="/assets/my-dog.jpeg" />
+        <source media="(min-width: 1000px)" srcset="/assets/cat.jpg" />
+        <img src="/assets/my-dog.jpeg" width="50" height="50" alt="" />
+      </picture>
 
       <p>Yosua Store</p>
 
@@ -26,7 +30,7 @@
 
         <nav>
           <ul>
-            <li>
+            <li class="bounce">
               <a href="#heroes">Home</a>
             </li>
             <li>
@@ -41,7 +45,7 @@
     </header>
 
     <main>
-      <h1>Yosua Pet Store</h1>
+      <h1 class="title">Yosua Pet Store</h1>
 
       <div id="heroes" class="heroes">
         <div class="bg_image"></div>
@@ -66,10 +70,12 @@
         </div>
       </div>
 
-      <section class="border-1">My text</section>
-      <section class="border-1">My text</section>
-      <section class="border-1">My text</section>
-      <section class="border-1">My text</section>
+      <div class="grid-container">
+        <section class="border-1 item-1">My text</section>
+        <section class="border-1 item-2">My text</section>
+        <section class="border-1 item-3">My text</section>
+        <section class="border-1 item-4">My text</section>
+      </div>
     </main>
 
     <footer>
@@ -90,12 +96,12 @@
             <option value="F">Female</option>
           </select>
 
-          <!-- <input type="radio" name="js" value="js" />
+          <input type="radio" name="js" value="js" />
           <label for="js">JS</label>
           <input type="radio" name="js" value="js" />
           <label for="js">CSS</label>
           <input type="radio" name="js" value="js" />
-          <label for="js">HTML</label> -->
+          <label for="js">HTML</label>
 
           <div style="display: flex">
             <input type="checkbox" />
