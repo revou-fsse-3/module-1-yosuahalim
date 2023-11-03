@@ -17,9 +17,13 @@
   <body>
     <header class="navigation">
       <picture>
-        <source media="(min-width: 1500px)" srcset="/assets/my-dog.jpeg" />
-        <source media="(min-width: 1000px)" srcset="/assets/cat.jpg" />
-        <img src="/assets/my-dog.jpeg" width="50" height="50" alt="" />
+        <source
+          media="(max-width: 1000px)"
+          width="100px"
+          height="100px"
+          srcset="/assets/cat.jpg"
+        />
+        <img src="/assets/my-dog.jpeg" width="50" height="50" alt="logo" />
       </picture>
 
       <p>Yosua Store</p>
@@ -89,6 +93,7 @@
             name="name"
             id="name"
             placeholder="Name"
+            required
           />
           <textarea class="inputForm" placeholder="Message"> </textarea>
           <select name="gender" id="gender">
@@ -102,6 +107,8 @@
           <label for="js">CSS</label>
           <input type="radio" name="js" value="js" />
           <label for="js">HTML</label>
+
+          <input type="date" />
 
           <div style="display: flex">
             <input type="checkbox" />
